@@ -109,8 +109,9 @@ export LANGUAGE="en_US.UTF-8"
 
 export WORK_PATH=$HOME/work
 export PROJECT_PATHS=($WORK_PATH)
-export TOOLSPATH=$HOME/tools
+export TOOLS_PATH=$HOME/tools
 
+export GIT_PATH=$WORK_PATH/git
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
