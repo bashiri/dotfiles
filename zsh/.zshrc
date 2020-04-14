@@ -99,19 +99,24 @@ cp)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+#export MANPATH="/usr/local/man:$MANPATH"
+export EDITOR="$(which nvim)"
+export SUDO_EDITOR="$(which nvim)"
+# You may need to manually set your language environment
+
+export LANG="en_US.UTF-8"
+export LANGUAGE="en_US.UTF-8"
+
 export WORK_PATH=$HOME/work
 export PROJECT_PATHS=($WORK_PATH)
 export TOOLSPATH=$HOME/tools
-#export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-
-export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-export EDITOR="$(which nvim)"
-export SUDO_EDITOR="$(which nvim)"
-
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
 
 #Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -133,17 +138,4 @@ alias vim="nvim"
 
 source ~/.xilinxrc
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('$TOOLSPATH/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "$TOOLSPATH/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "$TOOLSPATH/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="$TOOLSPATH/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+source ~/.toolsrc

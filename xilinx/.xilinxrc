@@ -1,4 +1,12 @@
-export XIL_TOOLS_PATH=$TOOLSPATH/Xilinx
-alias envvivado='source $XIL_TOOLS_PATH/Vivado/2019.2/settings64.sh'
-alias envvitis='source $XIL_TOOLS_PATH/Vitis/2019.2/settings64.sh'
-alias envptlnx='source $XIL_TOOLS_PATH/Petalinux/2019.2/settings64.sh'
+
+
+export XIL_TOOLS_PATH=$TOOLSPATH/xilinx
+
+alias envvivado='source $XIL_TOOLS_PATH/Vivado/2019.2/.settings64-Vivado.sh'
+alias envvivitis='source $XIL_TOOLS_PATH/Vivado/2019.2/.settings64-Vivado.sh'
+alias envdocnav='source $XIL_TOOLS_PATH/DocNav/.settings64-DocNav.sh'
+alias envmcomposer='source $XIL_TOOLS_PATH/Model_Composer/2019.2/.settings64-Model_Composer.sh'
+
+alias envxiltools='source $XIL_TOOLS_PATH/Vivado/2019.2/settings64.sh'
+
+
