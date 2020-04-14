@@ -1,0 +1,4 @@
+export XIL_TOOLS_PATH=$TOOLSPATH/Xilinx
+alias envvivado='source $XIL_TOOLS_PATH/Vivado/2019.2/settings64.sh'
+alias envvitis='source $XIL_TOOLS_PATH/Vitis/2019.2/settings64.sh'
+alias envptlnx='source $XIL_TOOLS_PATH/Petalinux/2019.2/settings64.sh'
