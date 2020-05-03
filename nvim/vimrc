@@ -20,6 +20,10 @@ set number
 set expandtab
 set fileformats=unix,dos,unix
 
+" copy with mouse without numberline
+" https://vi.stackexchange.com/questions/767/how-to-select-and-copy-lines-to-clipboard-which-are-selected-by-mouse-without-li
+set mouse=a
+
 " Get rid of the delay when pressing O (for example)
 " http://stackoverflow.com/questions/2158516/vim-delay-before-o-opens-a-new-line
 set timeout timeoutlen=1000 ttimeoutlen=100
