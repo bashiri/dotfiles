@@ -1,0 +1,4 @@
+xterm*faceName: Ubuntu Mono
+xterm*faceSize: 16
+xterm*renderFont: true
+#include ".config/xterm/themes/dracula.xresources"
