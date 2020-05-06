@@ -1,4 +1,5 @@
-xterm*faceName: Ubuntu Mono
+xterm*faceName: MesloLGS NF
 xterm*faceSize: 16
 xterm*renderFont: true
 #include ".config/xterm/themes/dracula.xresources"
+xterm*termName: xterm-256color
