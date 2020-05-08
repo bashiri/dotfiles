@@ -130,6 +130,8 @@ Plug 'jistr/vim-nerdtree-tabs'     " NERDTree and tabs together in Vim, painless
 Plug 'scrooloose/nerdtree'         " A tree explorer plugin for vim.
 Plug 'Xuyuanp/nerdtree-git-plugin' " A plugin of NERDTree showing git status
 
+" fuzzy finder 
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " lean & mean status/tabline for vim that's light as air
 Plug 'drewtempelmeyer/palenight.vim'
 
