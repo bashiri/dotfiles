@@ -1,0 +1,19 @@
+[Appearance]
+ColorScheme=Dracula
+Font=MesloLGS NF,16,-1,0,50,0,0,0,0,0,Regular
+
+[Cursor Options]
+CursorShape=0
+
+[General]
+Command=/bin/zsh
+Name=mp
+Parent=/home/ali/.local/share/konsole/mp.profile
+
+[Scrolling]
+HistoryMode=1
+HistorySize=10000
+
+[Terminal Features]
+BlinkingCursorEnabled=0
+UrlHintsModifiers=67108864
