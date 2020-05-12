@@ -1,4 +1,4 @@
-
+# add anaconda to path
 setup="$('$TOOLS_PATH/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
@@ -10,3 +10,9 @@ else
     fi
 fi
 unset __conda_setup
+
+# add ghdl to path
+if [ -d "$TOOLS_PATH/ghdl/bin" ] ; then
+        export PATH="$TOOLS_PATH/ghdl/bin:$PATH"
+fi
+
