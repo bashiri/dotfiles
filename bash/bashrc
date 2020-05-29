@@ -3,7 +3,8 @@ export OSH=/home/ali/.oh-my-bash
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
-OSH_THEME="font"
+#OSH_THEME="font"
+OSH_THEME="powerline-multiline"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,6 +52,7 @@ completions=(
   git
   composer
   ssh
+  pip3
 )
 
 # Which aliases would you like to load? (aliases can be found in ~/.oh-my-bash/aliases/*)
@@ -71,8 +73,6 @@ plugins=(
 )
 
 source $OSH/oh-my-bash.sh
-User
-
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -171,11 +171,9 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-export TOOLSPATH=$HOME/tools
-export WORK_PATH=$HOME/work
 
-source ~/.xilinxrc
-alias envptlnx='source $XIL_TOOLS_PATH/petalinux/2019.2/settings.sh'
-
+source ~/.life_pathes.sh
+source ~/.shell_aliases.sh
 export SHELL=/bin/bash
-export PATH=/snap/bin:$PATHexport PATH=/snap/bin:$PATH
+export PATH=/snap/bin:$PATH
+

@@ -80,21 +80,7 @@ ZSH_THEME=powerlevel10k/powerlevel10k
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 git 
-history-substring-search
-docker
-yii2 
-virtualenv
-vi-mode
-svcat
-fd
-pj
-colorize
-command-not-found
-colored-man-pages
-sbt
-golang 
-tmux
-cp)
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -107,11 +93,9 @@ export SUDO_EDITOR="$(which nvim)"
 export LANG="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
 
-export WORK_PATH=$HOME/work
-export PROJECT_PATHS=($WORK_PATH)
-export TOOLS_PATH=$HOME/tools
+source ~/.life_pathes.sh
 
-export GIT_PATH=$WORK_PATH/git
+
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -134,14 +118,15 @@ export GIT_PATH=$WORK_PATH/git
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 alias grep="grep --color=auto"
+alias ovim="vi"
 alias vi="vim"
 alias vim="nvim"
-
-# open tmux when open XTerm or UXTerm Terminal
+#alias sudo="sudo "
+# start tmux when open xterm or uxtermt
 # alias xterm="xterm -e tmux"
 # alias uxterm="uxterm -e tmux"
 xrdb ~/.Xresources
 
-source ~/.xilinxrc
+source ~/.shell_aliases.sh
 source ~/.toolsrc
 
