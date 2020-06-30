@@ -117,4 +117,5 @@ alias vi="nvim"
 [ -f ~/.pathes.sh ] && source ~/.pathes.sh
 [ -f ~/.aliases.zsh ] && source ~/.aliases.zsh
 [ -f ~/.tools.zsh ] && source ~/.tools.zsh
+export PATH=/usr/local/cuda/bin:$PATH  
 
