@@ -26,5 +26,7 @@
 	"material_theme_tabs_separator": true,
 	"material_theme_titlebar": true,
 	"material_theme_tree_headings": true,
-	"theme": "Material-Theme.sublime-theme"
+	"theme": "Material-Theme.sublime-theme",
+        "hot_exit": false,
+	"remember_open_files": false
 }
