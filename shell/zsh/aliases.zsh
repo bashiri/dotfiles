@@ -22,6 +22,11 @@ alias envptlnx='source $XIL_TOOLS_PATH/petalinux/2019.2/settings.sh'
 #alias vivado_hls="GTK_THEME=Adwaita vivado_hls"
 ## }}}#
 
+## Intel Tools {{{
+# begin sources
+alias envmdlsim='export PATH=${PATH}:/tools/Intel/intelFPGA_pro/19.4/modelsim_ase/bin'
+
+## }}}
 ## Eclipse :( {{{
 # alias eclipse="GTK_THEME=Adwaita eclipse"
 ## }}}
