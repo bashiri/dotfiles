@@ -33,4 +33,7 @@ alias envmdlsim='export PATH=${PATH}:/tools/Intel/intelFPGA_pro/19.4/modelsim_as
 
 ## Commands Short Name Aliases {{{
 alias xo="xdg-open"
+alias xls="logo-ls"
+alias ls="xls"
+alias xrm="trash-put"
 ## }}}
