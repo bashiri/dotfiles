@@ -1,0 +1,5 @@
+[core]
+	editor = nvim
+[commit]
+	gpgsign = true
+	template = ~/.gitmessage
