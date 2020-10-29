@@ -1,6 +1,7 @@
 
 # |<-- Preferably using up to 50 chararacters -->|<------------------->|
 # <type>: (If applied, this commit will...) <subject> (Max 50 char)
+
 # Example:
 # feat: Implement automated commit messages
 # Explain why this change is being made
@@ -8,7 +9,6 @@
 
 # Provide links or keys to any relevant tickets, articles or other resources
 # Example: Github issue #23
-
 # --- COMMIT END ---
 # Tag can be 
 #    feat     (new feature)
@@ -38,4 +38,4 @@
 # Initial commit
 # Add LICENCE
 # Add README.md
-# Update Main Readme
+# Update README.md
