@@ -42,5 +42,4 @@ function vpnconnent(){
 alias xo="xdg-open"
 alias xls="logo-ls"
 alias ls="xls"
-alias xrm="trash-put"
 ## }}}
