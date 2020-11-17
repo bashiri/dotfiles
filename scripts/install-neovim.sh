@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 ## Install Neovim (AppImage Download) {{{
-wget --quiet https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage --output-document nvim
+wget https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage --output-document nvim
 chmod +x nvim
 sudo chown root:root nvim
 sudo mv nvim /usr/bin
@@ -13,7 +13,8 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 ## }}}
 
 ## Vim Configuration {{{
-cp $PWD/../../nvim/vimrc ~/.vimrc
-cp ~/.vimrc ~/.config/nvim/init.vim
+mkdir -p ~/.config/nvim
+ln -s ../nvim/vimrc ~/.vimrc
+ln -s ~/.vimrc ~/.config/nvim/init.vim
 ##}}}
 
