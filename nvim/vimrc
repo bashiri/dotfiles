@@ -6,7 +6,6 @@ syntax on
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-
 " UFT-8 Encoding
 set encoding=utf-8
 scriptencoding utf-8
@@ -93,6 +92,9 @@ augroup format
         " Verilog
         autocmd Filetype vlang setlocal ts=4 sts=4 sw=4
 
+        " SystemVerilog
+        autocmd Filetype systemverilog setlocal ts=4 sts=4 sw=4
+
         " C++
         autocmd Filetype cpp setlocal ts=8 sts=8 sw=8 expandtab
 
@@ -153,12 +155,18 @@ Plug 'wellle/targets.vim'
 Plug 'sheerun/vim-polyglot'
 " conquer of compilation 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
+" SuperTab, complete with tab
+Plug 'ervandew/supertab'
+" systemverilog
+Plug 'vhda/verilog_systemverilog.vim'
 call plug#end()
 
 " }}}
 
 " Plugins Configurations {{{
+" supertab {{{
+let g:SuperTabDefaultCompletionType = 'context'
+" }}}
 
 " wakatime {{{
 let g:wakatime_PythonBinary = 'python3'
