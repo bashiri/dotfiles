@@ -11,12 +11,13 @@ alias xxtemp="cd /tmp/"
 
 ## Xilinx Tools {{{
 # begin sources 
-alias envvivado='source $XIL_TOOLS_PATH/Vivado/2019.2/.settings64-Vivado.sh'
-alias envvitis='source $XIL_TOOLS_PATH/Vitis/2019.2/.settings64-Vitis.sh'
+XILTOOLS_VERSION='2020.1'
+alias envvivado='source $XIL_TOOLS_PATH/Vivado/$XILTOOLS_VERSION/.settings64-Vivado.sh'
+alias envvitis='source $XIL_TOOLS_PATH/Vitis/$XILTOOLS_VERSION/.settings64-Vitis.sh'
 alias envdocnav='source $XIL_TOOLS_PATH/DocNav/.settings64-DocNav.sh'
-alias envmcomposer='source $XIL_TOOLS_PATH/Model_Composer/2019.2/.settings64-Model_Composer.sh'
-alias envxiltools='source $XIL_TOOLS_PATH/Vivado/2019.2/settings64.sh'
-alias envptlnx='source $XIL_TOOLS_PATH/petalinux/2019.2/settings.sh'
+alias envmcomposer='source $XIL_TOOLS_PATH/Model_Composer/$XILTOOLS_VERSION/.settings64-Model_Composer.sh'
+alias envxiltools='source $XIL_TOOLS_PATH/Vivado/$XILTOOLS_VERSION/settings64.sh'
+alias envptlnx='source $XIL_TOOLS_PATH/petalinux/$XILTOOLS_VERSION/settings.sh'
 alias envxise='source $XIL_TOOLS_PATH/ISE_DS/settings64.sh'
 
 # tools run commands
@@ -29,6 +30,7 @@ alias envxise='source $XIL_TOOLS_PATH/ISE_DS/settings64.sh'
 alias envmdlsim='export PATH=${PATH}:$QG_TOOLS_PATH/Intel/intelFPGA_pro/19.4/modelsim_ase/bin'
 
 ## }}}
+
 ## Eclipse :( {{{
 # alias eclipse="GTK_THEME=Adwaita eclipse"
 ## }}}
