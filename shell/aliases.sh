@@ -31,6 +31,11 @@ alias envmdlsim='export PATH=${PATH}:$QG_TOOLS_PATH/Intel/intelFPGA_pro/19.4/mod
 
 ## }}}
 
+## RISCV Tools {{{
+# PATH
+alias rvenv='export PATH=${PATH}:/tools/toolchains/riscv/bin'
+## }}}
+
 ## Eclipse :( {{{
 # alias eclipse="GTK_THEME=Adwaita eclipse"
 ## }}}
