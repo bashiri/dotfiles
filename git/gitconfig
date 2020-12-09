@@ -3,3 +3,7 @@
 [commit]
 	gpgsign = true
 	template = ~/.gitmessage
+[color]
+	ui = auto
+[init]
+	defaultBranch = main
