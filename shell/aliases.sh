@@ -21,7 +21,7 @@ alias envptlnx='source $XIL_TOOLS_PATH/petalinux/$XILTOOLS_VERSION/settings.sh'
 alias envxise='source $XIL_TOOLS_PATH/ISE_DS/settings64.sh'
 
 # tools run commands
-#alias vitis="GTK_THEME=Adwaita vitis"
+alias vitis="GTK_THEME=Adwaita vitis"
 #alias vivado_hls="GTK_THEME=Adwaita vivado_hls"
 ## }}}#
 
