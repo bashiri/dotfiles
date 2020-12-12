@@ -159,8 +159,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ervandew/supertab'
 " systemverilog
 Plug 'vhda/verilog_systemverilog.vim'
+" Vim-HDL VHSL Language
+Plug 'suoto/vim-hdl'
 call plug#end()
-
 " }}}
 
 " Plugins Configurations {{{
@@ -207,4 +208,6 @@ endif
 let g:palenight_terminal_italics=1 " Italics for my favorite color scheme
 
 " }}}
-
+" vim-hdl {{{
+let g:vimhdl_conf_file = '~/.configs/vimhdl.conf'
+" }}}
