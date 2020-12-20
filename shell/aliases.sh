@@ -9,6 +9,11 @@ alias xxtools="cd $QTOOLS_PATH"
 alias xxtemp="cd /tmp/"
 ## }}}
 
+## Emacs {{{
+# aliases
+alias emacs='emacs -nw'
+alias xemacs='emacs-gtk'
+## }}}
 ## Xilinx Tools {{{
 # begin sources 
 XILTOOLS_VERSION='2020.1'
