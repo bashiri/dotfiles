@@ -161,6 +161,8 @@ Plug 'ervandew/supertab'
 Plug 'vhda/verilog_systemverilog.vim'
 " Vim-HDL VHSL Language
 Plug 'suoto/vim-hdl'
+" R Programming
+Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 call plug#end()
 " }}}
 
