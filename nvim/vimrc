@@ -144,6 +144,10 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " fuzzy finder 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
+" Easy Align
+Plug 'junegunn/vim-easy-align'
+
 " lean & mean status/tabline for vim that's light as air
 Plug 'drewtempelmeyer/palenight.vim'
 
@@ -161,6 +165,8 @@ Plug 'ervandew/supertab'
 Plug 'vhda/verilog_systemverilog.vim'
 " Vim-HDL VHSL Language
 Plug 'suoto/vim-hdl'
+" Xilinx XDC 
+Plug 'https://github.com/amal-khailtash/vim-xdc-syntax.git'
 " R Programming
 Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 call plug#end()
