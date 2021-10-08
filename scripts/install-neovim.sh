@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 ## Install Neovim (AppImage Download) {{{
-wget https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage --output-document nvim
+wget https://github.com/neovim/neovim/releases/download/v0.5.1/nvim.appimage --output-document nvim
 chmod +x nvim
 sudo chown root:root nvim
 sudo mv nvim /usr/bin
