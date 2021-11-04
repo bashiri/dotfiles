@@ -24,6 +24,7 @@ alias envmcomposer='source $XIL_TOOLS_PATH/Model_Composer/$XILTOOLS_VERSION/.set
 alias envxiltools='source $XIL_TOOLS_PATH/Vivado/$XILTOOLS_VERSION/settings64.sh'
 alias envptlnx='source $XIL_TOOLS_PATH/petalinux/$XILTOOLS_VERSION/settings.sh'
 alias envxise='source $XIL_TOOLS_PATH/XISE/14.7/ISE_DS/settings64.sh'
+alias vivado_clean='rm vivado*.log vivado*.jou'
 
 # tools run commands
 alias vitis="GTK_THEME=Adwaita vitis"
