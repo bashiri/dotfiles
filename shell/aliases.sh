@@ -14,6 +14,7 @@ alias xxtemp="cd /tmp/"
 alias emacs='emacs -nw'
 alias xemacs='emacs-gtk'
 ## }}}
+
 ## Xilinx Tools {{{
 # begin sources 
 XILTOOLS_VERSION='2019.2'
@@ -24,7 +25,6 @@ alias envmcomposer='source $XIL_TOOLS_PATH/Model_Composer/$XILTOOLS_VERSION/.set
 alias envxiltools='source $XIL_TOOLS_PATH/Vivado/$XILTOOLS_VERSION/settings64.sh'
 alias envptlnx='source $XIL_TOOLS_PATH/petalinux/$XILTOOLS_VERSION/settings.sh'
 alias envxise='source $XIL_TOOLS_PATH/XISE/14.7/ISE_DS/settings64.sh'
-alias vivado_clean='rm vivado*.log vivado*.jou'
 
 # tools run commands
 alias vitis="GTK_THEME=Adwaita vitis"
@@ -33,19 +33,34 @@ alias vitis="GTK_THEME=Adwaita vitis"
 
 ## Intel Tools {{{
 # begin sources
-alias envmdlsim='export PATH=${PATH}:$QG_TOOLS_PATH/Intel/intelFPGA_pro/19.4/modelsim_ase/bin'
+function envmdlsim () {
+        if which vsim >/dev/null; then
+                export PATH=${PATH}
+        else
+                export PATH=${PATH}:$QG_TOOLS_PATH/Intel/intelFPGA_pro/19.4/modelsim_ase/bin
+        fi
+}
 
 ## }}}
 
 ## RISCV Tools {{{
 # PATH
-alias rvenv='export PATH=${PATH}:/tools/toolchains/riscv/bin'
+function rvenv () {
+        if which riscv32-unknown-elf-gcc >/dev/null; then
+                export PATH=${PATH}
+        else
+                export PATH=${PATH}:/tools/chains/riscv/toolchain/bin
+        fi
+}
 ## }}}
 
 ## Eclipse :( {{{
 # alias eclipse="GTK_THEME=Adwaita eclipse"
 ## }}}
 
+## Zotero {{{
+alias zotero=/tools/Programs/Zotero_linux-x86_64/zotero
+## }}}
 ## Open Connnect
 function vpnconnent(){
         echo $PROXY_PASSWORD | sudo openconnect $PROXY_SERVER --user=$PROXY_USERNAME --passwd-on-stdin --servercert $PROXY_SECRET
