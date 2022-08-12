@@ -3,9 +3,6 @@
 set nocompatible
 filetype plugin indent on
 syntax on
-let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-let &t_SR = "\<Esc>]50;CursorShape=2\x7"
-let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 " UFT-8 Encoding
 set encoding=utf-8
 scriptencoding utf-8
@@ -15,8 +12,8 @@ if $TMUX ==# ''
     set clipboard+=unnamed
 endif
 
-set smartindent " Smart indent
-set wrap        " Wrap lines
+set smartindent
+set wrap
 set smarttab
 set number
 set relativenumber
@@ -89,28 +86,28 @@ augroup format
         " VHDL
         autocmd Filetype vhdl setlocal ts=4 sts=4 sw=4
 
-        " Verilog
+        " verilog
         autocmd Filetype vlang setlocal ts=4 sts=4 sw=4
 
-        " SystemVerilog
+        " systemberilog
         autocmd Filetype systemverilog setlocal ts=4 sts=4 sw=4
 
         " C++
         autocmd Filetype cpp setlocal ts=8 sts=8 sw=8 expandtab
 
-        " Json
+        " json
         autocmd Filetype json setlocal ts=2 sts=2 sw=2 expandtab
 
-        " Babel configuration
+        " babel configuration
         autocmd BufRead,BufNewFile .babelrc setlocal filetype=json
 
-        " HTML
+        " html
         autocmd Filetype html setlocal ts=2 sts=2 sw=2 expandtab
 
-        " JavaScript
+        " js
         autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 expandtab
 
-        " Git commit
+        " git commit
         autocmd Filetype gitcommit setlocal spell textwidth=72
 
 augroup end
@@ -127,22 +124,20 @@ call plug#begin('~/.vim/plugged')
 
 " Git
 " A Vim plugin which shows a git diff in the gutter (sign column) and stages/undoes hunks.
-Plug 'airblade/vim-gitgutter' 
+Plug 'airblade/vim-gitgutter'
 
 " A powerful Git log viewer
 Plug 'cohama/agit.vim'
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" NerdTree
 " NerdTree and tabs together in Vim, painlessly
 Plug 'jistr/vim-nerdtree-tabs'
-" A tree explorer plugin for vim.
 Plug 'scrooloose/nerdtree'
-" A plugin of NERDTree showing git status
-Plug 'Xuyuanp/nerdtree-git-plugin' 
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
-" fuzzy finder 
+" fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 " Easy Align
@@ -157,15 +152,16 @@ Plug 'jeetsukumaran/vim-buffergator'
 Plug 'wellle/targets.vim'
  " a solid language pack for Vim.
 Plug 'sheerun/vim-polyglot'
-" conquer of compilation 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" conquer of compilation
+"
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " SuperTab, complete with tab
 Plug 'ervandew/supertab'
 " systemverilog
 Plug 'vhda/verilog_systemverilog.vim'
 " Vim-HDL VHSL Language
 Plug 'suoto/vim-hdl'
-" Xilinx XDC 
+" Xilinx XDC
 Plug 'https://github.com/amal-khailtash/vim-xdc-syntax.git'
 " R Programming
 Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
@@ -196,6 +192,8 @@ let g:NERDTreeWinPos = "right"
 " }}}
 
 " Airline (status line) {{{
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#taboo#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 1
